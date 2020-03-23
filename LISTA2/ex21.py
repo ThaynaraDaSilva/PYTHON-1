@@ -17,4 +17,11 @@ if gross_salary < 200:
 elif gross_salary >= 200 and gross_salary <= 500:
     tax = gross_salary * 10 / 100
 elif gross_salary > 500:
-    tax = gross_salary * 50 / 100
+    tax = gross_salary * 20 / 100
+net_salary = gross_salary - tax
+if net_salary <= 350:
+    bonus = 100
+elif net_salary > 350:
+    bonus = 50
+final_salary = net_salary + bonus
+print('The total salary to be received is: R$ {}'.format(final_salary))
